@@ -6,10 +6,10 @@
           <q-toolbar-title class="text-weight-bolder text-h5 text-primary">
             PayPay.
           </q-toolbar-title>
-          <div>
+          <div class="mobile-hide">
             <ul class="flex justify-between nav">
               <li
-                class="q-mx-md text-h6 nav"
+                class="q-mx-md text-body5 nav"
                 v-for="(list, index) in lists"
                 :key="index"
               >
