@@ -4,7 +4,8 @@
       <span class="text-primary">Invoice</span> / edit invoice
     </div>
 
-    <div class="card-radius bg-white">
+    <div class="card-radius bg-white q-my-md q-pa-xl">
+      <ProfileCard />
       <InvoiceProfile />
     </div>
   </div>
@@ -12,6 +13,7 @@
 
 <script setup lang="ts">
 import InvoiceProfile from 'src/components/InvoiceProfile.vue';
+import ProfileCard from 'src/components/ProfileCard.vue';
 </script>
 
 <style scoped>
