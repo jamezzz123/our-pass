@@ -5,3 +5,8 @@ body{
 
     font-family: 'Poppins', sans-serif;
 }
+
+
+.card-radius {
+    border-radius: 15px;
+  }
