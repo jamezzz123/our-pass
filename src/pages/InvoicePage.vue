@@ -7,6 +7,7 @@
     <div class="card-radius bg-white q-my-md q-pa-xl">
       <ProfileCard />
       <InvoiceProfile />
+      <InvoiceItemList />
       <InvoicePayment />
     </div>
   </div>
@@ -16,6 +17,7 @@
 import InvoiceProfile from 'src/components/InvoiceProfile.vue';
 import ProfileCard from 'src/components/ProfileCard.vue';
 import InvoicePayment from 'src/components/InvoicePaymentMethods.vue';
+import InvoiceItemList from 'src/components/InvoiceItemList.vue';
 </script>
 
 <style scoped>

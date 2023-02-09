@@ -14,7 +14,7 @@
                 :key="index"
               >
                 <q-icon
-                  class="q-mx-sm text-grey-5"
+                  class="q-mx-sm text-grey-6"
                   size="sm"
                   :name="list.icon"
                 />{{ list.name }}
