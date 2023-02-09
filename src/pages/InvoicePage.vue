@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="q-my-md text-h6">
+    <div class="q-my-md text-body1">
       <span class="text-primary">Invoice</span> / edit invoice
     </div>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-between">
-    <div class="col col-md-6">
+    <div class="col-md-6">
       <div class="flex justify-between">
         <p class="text-h6 text-secondary">Payment Method</p>
         <p class="text-h6 text-secondary">Select Payment</p>
