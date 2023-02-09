@@ -4,9 +4,9 @@
   >
     <div class="col-md-6 text-body1 text-capitalize">
       <p class="q-mb-sm text-weight-bold">Invoice Number</p>
-      <p class="q-mb-sm">INV-2020-010</p>
-      <p class="q-mb-sm">Issued Date: 11 Jan 2022</p>
-      <p class="q-mb-sm">Due Date:18 Jan 2022</p>
+      <p class="q-mb-sm">{{ invoice_number }}</p>
+      <p class="q-mb-sm">Issued Date: {{ issue_date }}</p>
+      <p class="q-mb-sm">Due Date: {{ due_date }}</p>
     </div>
     <div class="col-md-6 text-right text-body1 text-capitalize">
       <p class="q-mb-sm text-weight-bold">Billed to</p>
@@ -17,6 +17,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+  invoice_number: string;
+  issue_date: string;
+  due_date: string;
+  address?: string;
+}>();
+</script>
 
 <style scoped></style>

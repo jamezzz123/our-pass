@@ -28,30 +28,34 @@
           <div class="col-md-1">Total</div>
           <div class="col-md-1"></div>
         </div>
-        <div class="row items-center text-grey-6 text-weight-medium q-py-md">
+        <div
+          class="row items-center text-grey-6 text-weight-medium q-py-md"
+          :key="index"
+          v-for="(item, index) in items"
+        >
           <div class="col-md-6">
             <div class="q-pa-sm">
-              <BaseInput />
+              <BaseInput :modelValue="item.name" />
             </div>
           </div>
           <div class="col-md-2">
             <div class="q-pa-sm">
-              <BaseInput />
+              <BaseInput :modelValue="item.hour" />
             </div>
           </div>
           <div class="col-md-1">
             <div class="q-pa-sm">
-              <BaseInput />
+              <BaseInput :modelValue="item.rate" />
             </div>
           </div>
           <div class="col-md-1">
             <div class="q-pa-sm">
-              <BaseInput />
+              <BaseInput :modelValue="item.tax" />
             </div>
           </div>
           <div class="col-md-1">
             <div class="q-pa-sm">
-              <BaseInput />
+              <BaseInput :modelValue="item.total" />
             </div>
           </div>
           <div class="col-md-1">
@@ -72,6 +76,16 @@
 
 <script setup lang="ts">
 import BaseInput from './BaseInput.vue';
+type invoiceItem = {
+  hour: string;
+  name: string;
+  rate: number;
+  tax: number;
+  total: number;
+};
+defineProps<{
+  items: invoiceItem[];
+}>();
 </script>
 
 <style scoped>

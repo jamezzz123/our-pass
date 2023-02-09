@@ -4,8 +4,14 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
+    // redirect: 'invoice',
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
+      {
+        path: '',
+        children: [],
+        redirect: 'invoice',
+        component: () => import('pages/IndexPage.vue')
+      },
       { path: 'invoice', component: () => import('pages/InvoicePage.vue') }
     ],
   },
